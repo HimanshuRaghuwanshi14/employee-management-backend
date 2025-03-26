@@ -16,36 +16,7 @@ Package Manager	pip (for backend), npm (for frontend)
 ✔ REST API – Exposes endpoints for frontend communication
 ✔ PostgreSQL Integration – Uses a relational database for employee data storage
 
-📌 4. Project Directory Structure
-Backend (Django)
-bash
-Copy
-Edit
-backend/
-│── employees/               # Employee app (Django)
-│   ├── migrations/          # Database migration files
-│   ├── models.py            # Database models
-│   ├── serializers.py       # Convert models to JSON
-│   ├── views.py             # API logic
-│   ├── urls.py              # API endpoints
-│── backend/
-│   ├── settings.py          # Django settings (PostgreSQL config)
-│   ├── urls.py              # Root URL config
-│── manage.py                # Django management script
-│── requirements.txt         # Python dependencies
-Frontend (React)
-bash
-Copy
-Edit
-frontend/
-│── src/
-│   ├── components/          # Reusable UI components
-│   ├── pages/               # Page-level components
-│   ├── App.js               # Main component
-│   ├── api.js               # API calls (Axios)
-│── package.json             # Frontend dependencies
-│── .env                     # API URL config
-📌 5. Key Backend Components
+📌 4.Key Backend Components
 models.py (Django Model)
 python
 Copy
@@ -83,6 +54,7 @@ export const getEmployees = async (filters = {}) => {
     const response = await axios.get(API_URL, { params: filters });
     return response.data;
 };
+
 📌 6. Libraries Used
 Library	Purpose
 Django	Backend framework
